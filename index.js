@@ -6,8 +6,8 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.json())
 
-const router = require('./routes')
+const routerv1 = require('./routes/routerv1')
 
-app.use('/api/v1', router)
+app.use('/api/v1', routerv1)
 
 app.listen(port, () => console.log(`listen port ${port}`))
